@@ -23,7 +23,7 @@
                     </thead>
                     <tbody>
                         <row outputclass="color0">
-                            <entry><b>Page file metadata</b></entry>
+                            <entry><b>PAGE file metadata</b></entry>
                             <entry/>
                             <entry/>
                             <entry/>
@@ -62,7 +62,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>Border</entry>
+                            <entry><xref href="lyRand.dita">Border</xref></entry>
                             <entry>
                                 <codeph outputclass="language-xml" props="XPath">/PcGts/Page/Border/Coords</codeph></entry>
                             <entry>x</entry>
@@ -70,11 +70,18 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>Print Space</entry>
+                            <entry><xref href="lySatzspiegel.dita">Print Space</xref></entry>
                             <entry>
                                 <codeph outputclass="language-xml" props="XPath">/PcGts/Page/PrintSpace/Coords</codeph></entry>
                             <entry/>
                             <entry/>
+                            <entry>x</entry>
+                        </row>
+                        <row>
+                            <entry><xref href="lyLeserichtung.dita">Reading Order</xref></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ReadingOrder</codeph></entry>
+                            <entry/>
+                            <entry>x</entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color1">
@@ -86,7 +93,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>Image Width (imageWidth) <codeph outputclass="language-xml"
+                            <entry>Image Width <codeph outputclass="language-xml"
                                     props="XPath">/PcGts/Page/@imageWidth</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -94,7 +101,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>Image Heigh <codeph outputclass="language-xml" props="XPath"
+                            <entry>Image Height <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/@imageHeight</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -102,7 +109,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>Colour Image (imageFilename) <codeph outputclass="language-xml" props="XPath"
+                            <entry>Original Image <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/@imageFilename</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -133,7 +140,7 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color2">
-                            <entry><b>Special page metadata Page typing</b>
+                            <entry><b>Special page metadata</b>: <xref href="lySeitentypen.dita">Page type</xref>
                             </entry>
                             <entry/>
                             <entry/>
@@ -142,7 +149,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>front-cover <codeph outputclass="language-xml" props="XPath"
+                            <entry>front-cover page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='front-cover']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -150,7 +157,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>back-cover <codeph outputclass="language-xml" props="XPath"
+                            <entry>back-cover page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='back-cover']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -158,7 +165,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>title (page) <codeph outputclass="language-xml" props="XPath"
+                            <entry>title page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='title']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -166,7 +173,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>table-of-contents <codeph outputclass="language-xml" props="XPath"
+                            <entry>table of contents page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='table-of-contents']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -174,7 +181,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>register, index <codeph outputclass="language-xml" props="XPath"
+                            <entry>register or index page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='index']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -182,7 +189,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>book content <codeph outputclass="language-xml" props="XPath"
+                            <entry>content page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='content']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -198,14 +205,14 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry>other <codeph outputclass="language-xml" props="XPath"
+                            <entry>other page <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page[@type='other']</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color3">
-                            <entry><b>Page Region</b> TextRegion</entry>
+                            <entry>Page Region: <b>Text Regions</b></entry>
                             <entry><xref href="lytextregion.dita#textregionen__textregion_"
                                     >Textregion</xref>
                                 <codeph outputclass="language-xml" props="XPath"
@@ -465,8 +472,7 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color6">
-                            <entry>Page Region: <b>Separation Lines, Separators
-                                    (SeparatorRegion)</b></entry>
+                            <entry>Page Region: <b>Separation Lines, Separators</b></entry>
                             <entry><xref href="lySeparatoren.dita#lySeparatoren">Separation Lines,
                                     Separators</xref> : SeparatorRegion, <codeph
                                     outputclass="language-xml" props="XPath"
@@ -484,7 +490,7 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color7">
-                            <entry>Page Region: <b>Tables(TableRegion)</b></entry>
+                            <entry>Page Region: <b>Tables, Tabulars</b></entry>
                             <entry><xref href="lyTabellen.dita#lyTabellen">Tables</xref> :
                                 TableRegion, <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/TableRegion</codeph></entry>
@@ -494,7 +500,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry><codeph outputclass="language-xml" props="XPath"
+                            <entry>number of rows <codeph outputclass="language-xml" props="XPath"
                                 >/PcGts/Page/TableRegion/@rows</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -502,7 +508,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry><codeph outputclass="language-xml" props="XPath"
+                            <entry>number of columns <codeph outputclass="language-xml" props="XPath"
                                 >/PcGts/Page/TableRegion/@columns</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -510,7 +516,7 @@
                         </row>
                         <row>
                             <entry/>
-                            <entry><codeph outputclass="language-xml" props="XPath"
+                            <entry>with separator lines <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/TableRegion/@lineSeparators</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -518,7 +524,7 @@
                         </row>
                         <row outputclass="color8">
                             <entry>Page Region: <b>Line Drawing Region</b></entry>
-                            <entry><codeph outputclass="language-xml" props="XPath"
+                            <entry>Line Dawings: LineDrawingRegion <codeph outputclass="language-xml" props="XPath"
                                 >/PcGts/Page/LineDrawingRegion</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -533,7 +539,7 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color9">
-                            <entry>Page Region: <b>Maps (MapRegion)</b></entry>
+                            <entry>Page Region: <b>Maps</b></entry>
                             <entry><xref href="lyKarten.dita#lyKarten">Maps</xref> : MapRegion
                                     <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/MapRegion</codeph></entry>
@@ -550,9 +556,9 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color10">
-                            <entry>Page Region: <b>Mathematical characters (MathsRegion)</b></entry>
-                            <entry><xref href="lyMathematische_Zeichen.dita#lyMathematische_Zeichen"
-                                >Mathematical characters</xref> : MathsRegion, <codeph
+                            <entry>Page Region: <b>Mathematical Formulae</b></entry>
+                            <entry>Region of <xref href="lyMathematische_Zeichen.dita#lyMathematische_Zeichen"
+                                >mathematical characters</xref> : MathsRegion, <codeph
                                     props="XPath" outputclass="language-xml">/PcGts/Page/MathsRegion</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -567,9 +573,9 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color11">
-                            <entry>Page Region: <b>Chemical symbols (ChemRegion)</b></entry>
-                            <entry><xref href="lyChemische_Symbole.dita#lyChemische_Symbole"
-                                >Chemical symbols</xref> : ChemRegion, <codeph outputclass="language-xml" props="XPath"
+                            <entry>Page Region: <b>Chemical Formulae</b></entry>
+                            <entry>Region of <xref href="lyChemische_Symbole.dita#lyChemische_Symbole"
+                                >chemical symbols</xref> : ChemRegion, <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/ChemRegion</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -584,9 +590,9 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color12">
-                            <entry>Page Region: <b>Musical note (MusicRegion)</b></entry>
-                            <entry><xref href="lyNotenzeichen.dita#lyNotenzeichen">Musical
-                                    note</xref> : MusicRegion, <codeph outputclass="language-xml"
+                            <entry>Page Region: <b>Musical Scores</b></entry>
+                            <entry>Region of <xref href="lyNotenzeichen.dita#lyNotenzeichen">Musical
+                                    notes</xref> : MusicRegion, <codeph outputclass="language-xml"
                                     props="XPath">/PcGts/Page/MusicRegion</codeph></entry>
                             <entry/>
                             <entry>x</entry>
@@ -601,7 +607,7 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color13">
-                            <entry>Page Region: <b>Advertisement (AdvertRegion)</b></entry>
+                            <entry>Page Region: <b>Advertisements</b></entry>
                             <entry><xref href="lyWerbung.dita#lyWerbung">Advertisement</xref> :
                                 AdvertRegion <codeph outputclass="language-xml" props="XPath"
                                     >/PcGts/Page/AdvertRegion</codeph></entry>
@@ -618,8 +624,7 @@
                             <entry>x</entry>
                         </row>
                         <row outputclass="color14">
-                            <entry>Page Region: <b>Damage, Dirt, Stains, Noise
-                                (NoiseRegion)</b></entry>
+                            <entry>Page Region: <b>Damage, Dirt, Stains, Noise</b></entry>
                             <entry><xref href="lyRauschen.dita#lyRauschen">Damage, Dirt, Stains,
                                     Noise</xref> : NoiseRegion <codeph outputclass="language-xml"
                                     props="XPath">/PcGts/Page/NoiseRegion</codeph></entry>
