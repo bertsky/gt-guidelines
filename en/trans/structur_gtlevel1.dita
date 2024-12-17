@@ -7,11 +7,11 @@
             <table frame="all" rowsep="1" colsep="1" id="table_lkl_kxx_jrb">
                 <title/>
                 <tgroup cols="5">
-                    <colspec colname="c1" colnum="1" colwidth="1.25*"/>
-                    <colspec colname="newCol2" colnum="2" colwidth="1.5*"/>
-                    <colspec colname="c2" colnum="3" colwidth="1*"/>
-                    <colspec colname="c3" colnum="4" colwidth="1.25*"/>
-                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="newCol2" colnum="2" colwidth="2.0*"/>
+                    <colspec colname="c2" colnum="3" colwidth="0.1*"/>
+                    <colspec colname="c3" colnum="4" colwidth="0.1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="0.1*"/>
                     <thead>
                         <row>
                             <entry/>
@@ -194,6 +194,10 @@
                         </row>
                         <row outputclass="color3">
                             <entry>Page Region: <b><xref href="lytextregion.dita#textregionen__textregion_">Text Regions</xref></b></entry>
+			    <entry/>
+			    <entry/>
+			    <entry/>
+			    <entry/>
 			</row>
 			<row>
 			    <entry>Text Region (untyped)</entry>
@@ -351,6 +355,10 @@
                         </row>
                         <row outputclass="color5">
                             <entry>Page Region: <b><xref href="lyGraphik.dita#lyGraphik">Book decoration, drawings</xref></b></entry>
+			    <entry/>
+			    <entry/>
+			    <entry/>
+			    <entry/>
 			</row>
 			<row>
 			    <entry>Graphic Region (untyped)</entry>
@@ -368,7 +376,7 @@
                         </row>
                         <row>
                             <entry>letterhead</entry>
-                            <entry><codeph props="XPath">/PcGts/Page/GraphicRegion[@type='letterhead']</codeph></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='letterhead']</codeph></entry>
                             <entry/>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -389,7 +397,7 @@
                         </row>
                         <row>
                             <entry>handwritten annotation</entry>
-                            <entry><codeph props="XPath">/PcGts/Page/GraphicRegion[@type='handwritten-annotation']</codeph></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='handwritten-annotation']</codeph></entry>
                             <entry/>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -466,6 +474,10 @@
                         </row>
                         <row outputclass="color7">
                             <entry>Page Region: <b><xref href="lyTabellen.dita#lyTabellen">Tables, Tabulars</xref></b></entry>
+			    <entry/>
+			    <entry/>
+			    <entry/>
+			    <entry/>
 			</row>
 			<row>
 			    <entry>Table region</entry>
