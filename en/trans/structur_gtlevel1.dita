@@ -328,11 +328,25 @@
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
+                        <row>
+                            <entry>skew angle</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry>x</entry>
+                            <entry>x</entry>
+                        </row>
                         <row outputclass="color4">
                             <entry>Page Region: <b><xref href="lyBildbereiche.dita#lyBildbereiche">Illustrations, photos</xref></b></entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ImageRegion</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
+                            <entry>x</entry>
+                        </row>
+                        <row>
+                            <entry>skew angle</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ImageRegion/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color5">
@@ -422,16 +436,30 @@
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
-                        <row outputclass="color6">
-                            <entry>Page Region: <b><xref href="lySeparatoren.dita#lySeparatoren">Separator Lines</xref></b></entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/SeparatorRegion</codeph></entry>
+                        <row>
+                            <entry>skew angle</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry></entry>
                             <entry>x</entry>
+                        </row>
+                        <row outputclass="color8">
+                            <entry>Page Region: <b>Line Drawings</b></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion</codeph></entry>
+                            <entry></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>skew angle</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/SeparatorRegion/@orientation</codeph></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion/@orientation</codeph></entry>
+                            <entry/>
+                            <entry></entry>
+                            <entry>x</entry>
+                        </row>
+                        <row outputclass="color6">
+                            <entry>Page Region: <b><xref href="lySeparatoren.dita#lySeparatoren">Separator Lines</xref></b></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/SeparatorRegion</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -474,17 +502,10 @@
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
-                        <row outputclass="color8">
-                            <entry>Page Region: <b>Line Drawings</b></entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion</codeph></entry>
-                            <entry></entry>
-                            <entry>x</entry>
-                            <entry>x</entry>
-                        </row>
                         <row>
                             <entry>skew angle</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion/@orientation</codeph></entry>
-                            <entry/>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@orientation</codeph></entry>
+                            <entry></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
@@ -506,7 +527,7 @@
                             <entry>skew angle</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MapRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color10">
@@ -520,7 +541,7 @@
                             <entry>skew angle</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MathsRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color11">
@@ -534,7 +555,7 @@
                             <entry>skew angle</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ChemRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color12">
@@ -548,7 +569,7 @@
                             <entry>skew angle</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MusicRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color13">
@@ -562,7 +583,7 @@
                             <entry>skew angle</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/AdvertRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color14">

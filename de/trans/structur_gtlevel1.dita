@@ -327,11 +327,25 @@
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
+                        <row>
+                            <entry>Drehwinkel</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry>x</entry>
+                            <entry>x</entry>
+                        </row>
                         <row outputclass="color4">
                             <entry>Seitenregion: <b><xref href="lyBildbereiche.dita#lyBildbereiche">Abbildungen, Fotos</xref></b></entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ImageRegion</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
+                            <entry>x</entry>
+                        </row>
+                        <row>
+                            <entry>Drehwinkel</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ImageRegion/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color5">
@@ -423,16 +437,30 @@
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
-                        <row outputclass="color6">
-                            <entry>Seitenregion: <b><xref href="lySeparatoren.dita#lySeparatoren">Trennlinien (Separatoren)</xref></b></entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/SeparatorRegion</codeph></entry>
+                        <row>
+                            <entry>Drehwinkel</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry></entry>
                             <entry>x</entry>
+                        </row>
+                        <row outputclass="color8">
+                            <entry>Seitenregion: <b>Strichzeichnungen</b></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion</codeph></entry>
+                            <entry/>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>Drehwinkel</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/SeparatorRegion/@orientation</codeph></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion/@orientation</codeph></entry>
+                            <entry/>
+                            <entry></entry>
+                            <entry>x</entry>
+                        </row>
+                        <row outputclass="color6">
+                            <entry>Seitenregion: <b><xref href="lySeparatoren.dita#lySeparatoren">Trennlinien (Separatoren)</xref></b></entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/SeparatorRegion</codeph></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                             <entry>x</entry>
@@ -475,17 +503,10 @@
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
-                        <row outputclass="color8">
-                            <entry>Seitenregion: <b>Strichzeichnungen</b></entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion</codeph></entry>
-                            <entry/>
-                            <entry>x</entry>
-                            <entry>x</entry>
-                        </row>
                         <row>
                             <entry>Drehwinkel</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion/@orientation</codeph></entry>
-                            <entry/>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@orientation</codeph></entry>
+                            <entry></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
@@ -507,35 +528,35 @@
                             <entry>Drehwinkel</entry>
                             <entry>orientation<codeph outputclass="language-xml" props="XPath">/PcGts/Page/MapRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color10">
                             <entry>Seitenregion: <b><xref href="lyMathematische_Zeichen.dita#lyMathematische_Zeichen">Mathematische Formeln</xref></b></entry>
                             <entry><codeph props="XPath" outputclass="language-xml">/PcGts/Page/MathsRegion</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>Drehwinkel</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MathsRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color11">
                             <entry>Seitenregion: <b><xref href="lyChemische_Symbole.dita#lyChemische_Symbole">Chemische Formeln</xref></b></entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ChemRegion</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>Drehwinkel</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ChemRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color12">
@@ -549,7 +570,7 @@
                             <entry>Drehwinkel</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MusicRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color13">
@@ -563,7 +584,7 @@
                             <entry>Drehwinkel</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/AdvertRegion/@orientation</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry></entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color14">
