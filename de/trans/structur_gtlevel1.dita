@@ -121,30 +121,23 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>primäre Sprache</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@primaryLanguage</codeph></entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                        </row>
-                        <row>
-                            <entry>sekundäre Sprache</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@secondaryLanguage</codeph></entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                        </row>
-                        <row>
-                            <entry>Drehwinkel (Ausrichtung, Schiefe)</entry>
+                            <entry>Drehwinkel (Ausrichtung N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@orientation</codeph></entry>
                             <entry></entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
+                        <row>
+                            <entry>Drehwinkel (Schiefe ±≤45°)</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry>?</entry>
+                            <entry>x</entry>
+                        </row>
                         <row outputclass="color2">
                             <entry><b>spezielle Seiten-Metadaten:</b> <xref href="lySeitentypen.dita">Seitentyp</xref>
                             </entry>
-                            <entry/>
+                            <entry>(zurückgestellt)</entry>
                             <entry/>
                             <entry/>
                             <entry/>
@@ -244,7 +237,7 @@
                             <entry>Kolumnentitel</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='header']</codeph></entry>
                             <entry/>
-                            <entry></entry>
+                            <entry>x</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -307,7 +300,7 @@
                             <entry>Fußnote</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='footnote']</codeph></entry>
                             <entry/>
-                            <entry></entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -315,34 +308,34 @@
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='footnote-continued']</codeph></entry>
                             <entry/>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                         </row>
                         <row>
                             <entry>Endnote</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='endnote']</codeph></entry>
                             <entry/>
                             <entry></entry>
-                            <entry>x</entry>
+                            <entry>?</entry>
                         </row>
                         <row>
                             <entry>Verzeichniseintrag</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='TOC-entry']</codeph></entry>
                             <entry/>
                             <entry></entry>
-                            <entry>x</entry>
+                            <entry></entry>
                         </row>
                         <row>
                             <entry>list-label</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='list-label']</codeph></entry>
                             <entry/>
                             <entry></entry>
-                            <entry>x</entry>
+                            <entry></entry>
                         </row>
                         <row>
                             <entry>Sonstiges</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='other']</codeph></entry>
                             <entry></entry>
-                            <entry></entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -368,7 +361,7 @@
                         </row>
                         <row outputclass="color5">
                             <entry>Seitenregion: <b><xref href="lyGraphik.dita#lyGraphik">Buchschmuck, Zeichnungen</xref></b></entry>
-			    <entry/>
+			    <entry>zurückstellen: </entry>
 			    <entry/>
 			    <entry/>
 			    <entry/>
@@ -377,7 +370,7 @@
 			    <entry>Grafikregion (untypisiert)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion</codeph></entry>
                             <entry>x</entry>
-                            <entry>?</entry>
+                            <entry>x</entry>
                             <entry></entry>
                         </row>
                         <row>
@@ -398,28 +391,28 @@
                             <entry>Buchschmuck</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='decoration']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>Rahmen</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='frame']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>handschriftliche Ergänzung</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='handwritten-annotation']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>Stempel</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='stamp']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -454,7 +447,7 @@
                             <entry>anderes</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='other']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -495,7 +488,7 @@
 			<row>
 			    <entry>Tabellenregion</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion</codeph></entry>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
@@ -506,25 +499,32 @@
                             <entry></entry>
                             <entry>x</entry>
                         </row>
+			<row>
+			    <entry>Tabellentrenner</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/SeparatorRegion</codeph></entry>
+                            <entry></entry>
+                            <entry>?</entry>
+                            <entry>x</entry>
+                        </row>
                         <row>
                             <entry>Anzahl Reihen</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@rows</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>Anzahl Spalten</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@columns</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>mit Trennlinien</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@lineSeparators</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -601,7 +601,7 @@
                             <entry>Seitenregion: <b><xref href="lyWerbung.dita#lyWerbung">Werbung, Anzeigen</xref></b></entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/AdvertRegion</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>

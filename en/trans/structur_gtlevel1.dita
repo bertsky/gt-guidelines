@@ -122,24 +122,17 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>Primary Language</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@primaryLanguage</codeph></entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                        </row>
-                        <row>
-                            <entry>Secondary Language</entry>
-                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@secondaryLanguage</codeph></entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                            <entry>?</entry>
-                        </row>
-                        <row>
-                            <entry>rotation angle (orientation, skew)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@orientation</codeph></entry>
                             <entry></entry>
                             <entry>x</entry>
+                            <entry>x</entry>
+                        </row>
+                        <row>
+                            <entry>rotation angle (skew ±≤45°)</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/@orientation</codeph></entry>
+                            <entry></entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row outputclass="color2">
@@ -245,7 +238,7 @@
                             <entry>header</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='header']</codeph></entry>
                             <entry/>
-                            <entry></entry>
+                            <entry>x</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -308,7 +301,7 @@
                             <entry>footnote</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='footnote']</codeph></entry>
                             <entry/>
-                            <entry></entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -316,38 +309,38 @@
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='footnote-continued']</codeph></entry>
                             <entry/>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                         </row>
                         <row>
                             <entry>endnote</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='endnote']</codeph></entry>
                             <entry/>
                             <entry></entry>
-                            <entry>x</entry>
+                            <entry>?</entry>
                         </row>
                         <row>
                             <entry>table-of-contents entry</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='TOC-entry']</codeph></entry>
                             <entry/>
                             <entry></entry>
-                            <entry>x</entry>
+                            <entry></entry>
                         </row>
                         <row>
                             <entry>list label</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='list-label']</codeph></entry>
                             <entry/>
                             <entry></entry>
-                            <entry>x</entry>
+                            <entry></entry>
                         </row>
                         <row>
                             <entry>other</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion[@type='other']</codeph></entry>
                             <entry></entry>
-                            <entry></entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TextRegion/@orientation</codeph></entry>
                             <entry></entry>
                             <entry>x</entry>
@@ -361,7 +354,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ImageRegion/@orientation</codeph></entry>
                             <entry></entry>
                             <entry></entry>
@@ -378,7 +371,7 @@
 			    <entry>Graphic Region (untyped)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion</codeph></entry>
                             <entry>x</entry>
-                            <entry>?</entry>
+                            <entry>x</entry>
                             <entry></entry>
                         </row>
                         <row>
@@ -399,28 +392,28 @@
                             <entry>decoration</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='decoration']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>frame</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='frame']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>handwritten annotation</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='handwritten-annotation']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>stamp</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='stamp']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
@@ -455,11 +448,11 @@
                             <entry>other</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion[@type='other']</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/GraphicRegion/@orientation</codeph></entry>
                             <entry></entry>
                             <entry></entry>
@@ -473,7 +466,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/LineDrawingRegion/@orientation</codeph></entry>
                             <entry/>
                             <entry></entry>
@@ -496,7 +489,7 @@
 			<row>
 			    <entry>Table region</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion</codeph></entry>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                             <entry>x</entry>
                         </row>
@@ -507,29 +500,36 @@
                             <entry></entry>
                             <entry>x</entry>
                         </row>
+			<row>
+			    <entry>Table separators</entry>
+                            <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/SeparatorRegion</codeph></entry>
+                            <entry></entry>
+                            <entry>?</entry>
+                            <entry>x</entry>
+                        </row>
                         <row>
                             <entry>number of rows</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@rows</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>number of columns</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@columns</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
                             <entry>with separator lines</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@lineSeparators</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/TableRegion/@orientation</codeph></entry>
                             <entry></entry>
                             <entry>x</entry>
@@ -550,7 +550,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MapRegion/@orientation</codeph></entry>
                             <entry/>
                             <entry></entry>
@@ -564,7 +564,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MathsRegion/@orientation</codeph></entry>
                             <entry/>
                             <entry></entry>
@@ -578,7 +578,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/ChemRegion/@orientation</codeph></entry>
                             <entry/>
                             <entry></entry>
@@ -592,7 +592,7 @@
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/MusicRegion/@orientation</codeph></entry>
                             <entry/>
                             <entry></entry>
@@ -602,11 +602,11 @@
                             <entry>Page Region: <b><xref href="lyWerbung.dita#lyWerbung">Advertisements</xref></b></entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/AdvertRegion</codeph></entry>
                             <entry/>
-                            <entry>x</entry>
+                            <entry>?</entry>
                             <entry>x</entry>
                         </row>
                         <row>
-                            <entry>rotation angle (orientation)</entry>
+                            <entry>rotation angle (orientation N*90°)</entry>
                             <entry><codeph outputclass="language-xml" props="XPath">/PcGts/Page/AdvertRegion/@orientation</codeph></entry>
                             <entry/>
                             <entry></entry>
